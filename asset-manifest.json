@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/whethe-mobile/static/css/main.6cad5b5f.css",
-    "main.js": "/whethe-mobile/static/js/main.352a8f35.js",
+    "main.js": "/whethe-mobile/static/js/main.3d86a8f9.js",
     "static/media/bg-cloud2.png": "/whethe-mobile/static/media/bg-cloud2.acf4c8ea4f6056890a80.png",
     "static/media/GitHub.png": "/whethe-mobile/static/media/GitHub.9c2a4667ed5a3be5dad8.png",
     "index.html": "/whethe-mobile/index.html",
     "static/media/search.svg": "/whethe-mobile/static/media/search.9438d7461f331d65458eaa7b7bbfaf1b.svg",
     "main.6cad5b5f.css.map": "/whethe-mobile/static/css/main.6cad5b5f.css.map",
-    "main.352a8f35.js.map": "/whethe-mobile/static/js/main.352a8f35.js.map"
+    "main.3d86a8f9.js.map": "/whethe-mobile/static/js/main.3d86a8f9.js.map"
   },
   "entrypoints": [
     "static/css/main.6cad5b5f.css",
-    "static/js/main.352a8f35.js"
+    "static/js/main.3d86a8f9.js"
   ]
 }
