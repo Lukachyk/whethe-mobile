@@ -1,3 +1,9 @@
+- The apps are adapted for iPhone 11 Pro Max only
+- Querying http://api.openweathermap.org for weather data in Kiev 
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
