@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+
+@import './reset.css';
+
+body {
+   font-family: 'Roboto', sans-serif;
+}
+
+.main-screen {
+   position: relative;
+   margin: 0 auto;
+   max-width: 414px;
+   max-height: 896px;
+}
+.main-screen__img {
+   position: absolute;
+   top: 15px;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+.main-bg {
+   z-index: -1;
+   position: absolute;
+   width: 414px;
+   height: 896px;
+   overflow-x: scroll;
+   background: linear-gradient(
+      180deg,
+      #30bbbb 0%,
+      #6cd6d6 17.71%,
+      #95ffff 100%
+   );
+}
+
+.main-bg::before {
+   content: '';
+   background-image: url('./img/bg-cloud2.png');
+   position: absolute;
+   height: 896px;
+   width: 414px;
+   left: 0px;
+   top: 0px;
+
+   mix-blend-mode: lighten;
+   opacity: 0.9;
+}
+
+.container {
+   max-width: 362px;
+   margin: 0 26px;
+}
+
+.header__nav {
+   padding-top: 63px;
+}
+
+.header__nav__block {
+   display: flex;
+   position: relative;
+   align-items: center;
+   border-radius: 70px;
+   background-color: #fff;
+}
+.header__nav__block__search {
+   padding: 13px 10px 12.25px 13px;
+}
+.header__nav__block__input {
+   padding: 10px 86px 10px 53px;
+}
+
+.header__nav__block__input::placeholder {
+   font-family: 'Roboto Slab';
+   font-size: 25px;
+
+   line-height: 1.32;
+
+   color: #88bbbb;
+}
+
+.block {
+   padding-top: 44px;
+}
+.block__card {
+   min-width: 362px;
+   min-height: 318px;
+
+   background-color: rgba(99, 201, 201, 0.8);
+
+   opacity: 0.8;
+
+   border-radius: 39px;
+}
+.block__card__items {
+   position: relative;
+   padding: 28px 36px 19px;
+   font-family: 'Roboto Slab';
+   color: #ffffff;
+}
+
+.block__card__items__city {
+   font-weight: 500;
+   font-size: 30px;
+   line-height: 40px;
+}
+
+.block__card__items__date {
+   font-weight: 400;
+   font-size: 15px;
+   line-height: 20px;
+
+   text-transform: capitalize;
+
+   opacity: 0.8;
+}
+
+.block__card__items__heard-btn {
+   position: absolute;
+   top: 40px;
+   right: 30px;
+   stroke: #fff;
+   fill: none;
+}
+
+.block__card__items__heard-btn:hover svg {
+   stroke: #fd2e24;
+   fill: #fd2e24;
+}
+
+.block__card__temp {
+   z-index: 1;
+   display: flex;
+   justify-content: row;
+   column-gap: 51px;
+   padding-left: 41px;
+   text-shadow: 1px 1px 0px #ccc, -1px -1px 0px #fff;
+}
+
+.block__card__temp__number {
+   font-size: 79px;
+   color: #fff;
+}
+.block__card__temp__img {
+   width: 79px;
+   height: 86.86px;
+}
+
+.wrapper {
+   padding-top: 20px;
+   display: flex;
+   column-gap: 32px;
+   padding-left: 32px;
+   padding-right: 32px;
+}
+.block__card__max-low {
+   justify-content: center;
+   text-align: center;
+   width: 132px;
+   height: 74px;
+   background: rgba(22, 201, 201, 0.86);
+   font-size: 30px;
+   border-radius: 22px;
+   color: #ffffff;
+}
+
+.block__card__max-low__title {
+   padding-top: 2px;
+   font-family: Roboto Condensed;
+}
+
+.footer {
+   padding: 10px;
+   position: relative;
+   text-align: center;
+}
+.footer__img {
+   max-width: 328px;
+   background-color: rgba(99, 201, 201, 0.412);
+
+   border-radius: 39px;
+}
+.footer::after {
+   content: 'GitHub Page';
+   position: absolute;
+   top: 31px;
+   left: 50%;
+   transform: translateX(-50%);
+   font-size: 26px;
+   z-index: 2;
+   color: #ffffff;
+}
