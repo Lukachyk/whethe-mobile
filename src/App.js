@@ -34,20 +34,6 @@ function App() {
          const temperatureInCelsius = temperatureInKelvin - 273.15;
          const date = new Date(timestamp * 1000);
          const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-         const months = [
-            'Jan',
-            'Feb',
-            'Mar',
-            'Apr',
-            'May',
-            'Jun',
-            'Jul',
-            'Aug',
-            'Sep',
-            'Oct',
-            'Nov',
-            'Dec',
-         ];
          const formattedDate = `${days[date.getDay()]} ${
             date.getMonth() + 1
          }/${date.getDate()}/${date.getFullYear() % 100}`;
