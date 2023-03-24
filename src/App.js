@@ -6,7 +6,7 @@ import github from './img/GitHub.png';
 import { useState } from 'react';
 
 function App() {
-   const [connect, setConnect] = useState(true);
+   const [connect, setConnect] = useState(null);
    const API_key = '**********';
    const url = 'http://api.openweathermap.org/data/2.5/weather?q=Kyiv';
    const cityElement = document.querySelector('.block__card__items__city');
@@ -39,7 +39,7 @@ function App() {
          const formattedDate = `${days[date.getDay()]} ${
             date.getMonth() + 1
          }/${date.getDate()}/${date.getFullYear() % 100}`;
-
+         setConnect(true);
          return {
             city,
             date: formattedDate,
