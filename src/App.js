@@ -74,13 +74,17 @@ function App() {
 
    return (
       <div className="main-screen">
-         <img className="main-screen__img" src={bangs} />
+         <img className="main-screen__img" src={bangs} alt="bangs" />
          <div className="main-bg"></div>
          <header className="header">
             <div className="container">
                <nav className="header__nav">
                   <form className="header__nav__block">
-                     <img className="header__nav__block__search" src={search} />
+                     <img
+                        className="header__nav__block__search"
+                        src={search}
+                        alt="search"
+                     />
                      <input
                         className="header__nav__block__input"
                         type="text"
@@ -127,7 +131,11 @@ function App() {
                   </div>
                   <div className="block__card__temp">
                      <p className="block__card__temp__number">00&deg;C</p>
-                     <img className="block__card__temp__img" src={cloud} />
+                     <img
+                        className="block__card__temp__img"
+                        src={cloud}
+                        alt="cloud"
+                     />
                   </div>
                   <div className="wrapper">
                      <div className="block__card__max-low">
